@@ -1,6 +1,6 @@
 # About this research
 
-Coral populations globally are rapidly declining due to anthropogenic effects. Coral restoration helps mitigate the loss of corals and may increase resilience by introducing genetically diverse coral recruits (young corals produced through sexual propagation).
+Coral populations globally are rapidly declining due to anthropogenic effects. Coral restoration helps mitigate the loss of corals and may increase resilience by introducing genetically diverse coral recruits (young corals produced through sexual propagation) to degraded reefs.
 
 Challenge: Larger coral recruits have a higher chance of survival after outplanting, but the time required to grow them in the nursery prior to outplanting can be laborious, time-consuming, and costly. In order to scale up restoration efforts, we must reduce the grow-out period.
 
