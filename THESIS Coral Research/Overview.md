@@ -2,7 +2,7 @@
 
 Coral populations globally are rapidly declining due to anthropogenic effects. Coral restoration helps mitigate the loss of corals and may increase resilience by introducing genetically diverse coral recruits (young corals produced through sexual propagation) to degraded reefs.
 
-Challenge: Larger coral recruits have a higher chance of survival after outplanting, but the time required to grow them in the nursery prior to outplanting can be laborious, time-consuming, and costly. In order to scale up restoration efforts, we must reduce the grow-out period.
+Challenge: Larger coral recruits have a higher chance of survival after outplanting, but the time required to grow them in the nursery prior to outplanting can be laborious, time-consuming, and costly. To scale up restoration efforts, reducing the grow-out period becomes essential. This can be accomplished by optimizing the laboratory environment where corals are raised, including the provision of optimal lighting. However, the ideal light spectrum for raising young corals in land-based nurseries remains unexplored.
 
 The purpose of this thesis research is to explore the optimal light spectrum for coral recruits in land-based nurseries that promotes both survival and growth.
 
