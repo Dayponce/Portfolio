@@ -1,4 +1,4 @@
-About this research
+# About this research
 
 The purpose of this thesis research is to explore the optimal light spectrum for coral recruits in land-based nurseries that promotes both survival and growth. 
 
