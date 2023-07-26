@@ -1,5 +1,5 @@
 # Portfolio
-#Welcome to my Data Analyst Portfolio!
+# Welcome to my Data Analyst Portfolio!
 
 Hi, I'm Daisy! I have a coral research background and hold a Master degree in Marine Science (M.S.) from NOVA Southeastern University.
 As a  marine scientist and data analyst, I posses a strong academic background and experience in using various tools and technologies to collect, organize, and analyze data to inform business decisions. My proficiency lies in R, SQL, Excel, and Tableau, and have developed a keen understanding of data analytics techniques, including dashboard building, report & proposal writing, data mining, data merging, statistics, critical thinking and scientific communincation.
