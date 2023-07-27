@@ -1,0 +1,100 @@
+/*
+Laboratory Orders Data Exploration 
+Cleaned in Excel: To clean the Excel sheet and display only food order data from 2021 to 2023, 
+a filter or data sorting tool was applied to extract and retain relevant rows corresponding to 
+food-related orders within the specified date range. Non-food order entries from the original sheet,
+spanning from 2016 to the present, were removed or filtered out, resulting in a clean datasheet 
+containing only the desired food order information.
+
+SQL Skills used: Data Aggregation function, Date Manipulation, Temp Tables, Windows Functions, Grouping and Ordering Functions, Subqueries, Converting Data Types, Mathematical Operations, CASE Statements
+
+*/
+
+---
+SELECT
+  SUM(Total_Price_) AS total_spending_this_year
+FROM `pure-oxygen-373503.Lab_orders.food`
+WHERE EXTRACT(YEAR FROM Date_Ordered) = 2023;
+
+
+Top Items by Spending This Year:
+SELECT
+  Item,
+  SUM(Total_Price_) AS total_spent,
+  COUNT(*) AS order_count
+FROM `pure-oxygen-373503.Lab_orders.food`
+WHERE EXTRACT(YEAR FROM Date_Ordered) = 2023
+GROUP BY Item
+ORDER BY total_spent DESC
+LIMIT 10;
+
+
+Vendor Spending This Year (jan1- july27) :
+SELECT
+  Vendor,
+  SUM(Total_Price_) AS total_spending_by_vendor
+FROM `pure-oxygen-373503.Lab_orders.food`
+WHERE EXTRACT(YEAR FROM Date_Ordered) = 2023
+GROUP BY Vendor
+ORDER BY total_spending_by_vendor DESC;
+
+Monthly Spending Trends This Year:
+SELECT
+  EXTRACT(MONTH FROM Date_Ordered) AS order_month,
+  SUM(Total_Price_) AS total_spent
+FROM `pure-oxygen-373503.Lab_orders.food`
+WHERE EXTRACT(YEAR FROM Date_Ordered) = 2023
+GROUP BY order_month
+ORDER BY order_month;
+
+compare to last year spending:
+
+Lab ordered from the last 3 years:
+
+ Total Expenditure with Vendors: 
+SELECT Vendor, SUM(Total_Price_) AS total_expenditure 
+FROM `pure-oxygen-373503.Lab_orders.food` 
+GROUP BY Vendor;
+
+
+Total Expenditure with Vendors, grouped year:( To combine the vendors "Brightwell" and "Brightwell Aquatics" into a single vendor name "Brightwell," you can use a CASE statement within the SELECT)
+SELECT
+  CASE
+    WHEN Vendor = 'Brightwell Aquatics' THEN 'Brightwell'
+    ELSE Vendor
+  END AS Vendor,
+  EXTRACT(YEAR FROM Date_Ordered) AS order_year,
+  SUM(Total_Price_) AS total_expenditure
+FROM `pure-oxygen-373503.Lab_orders.food`
+GROUP BY Vendor, order_year;
+
+
+Purchase Trends Over Time(since 2021)
+SELECT 
+    DATE_TRUNC(Date_Ordered, MONTH) AS order_month,
+    SUM(Total_Price_) AS total_spent
+FROM `pure-oxygen-373503.Lab_orders.food`
+GROUP BY order_month
+ORDER BY order_month;
+
+
+how often: based on 
+WITH OrderedFood AS (
+  SELECT 
+    Item,
+    EXTRACT(YEAR FROM Date_Ordered) AS Order_Year,
+    Date_Ordered,
+    Units,
+    LAG(Date_Ordered) OVER (PARTITION BY Item ORDER BY Date_Ordered) AS Prev_Order_Date,
+    LAG(Units) OVER (PARTITION BY Item ORDER BY Date_Ordered) AS Prev_Units
+  FROM `pure-oxygen-373503.Lab_orders.food`
+)
+SELECT 
+    Item,
+    Order_Year,
+    Date_Ordered,
+    Units,
+    DATE_DIFF(Date_Ordered, Prev_Order_Date, DAY) AS days_between_orders,
+    Units - Prev_Units AS units_diff_previous_month
+FROM OrderedFood
+WHERE Order_Year IN (2022, 2023); -- Filter for this year's data
