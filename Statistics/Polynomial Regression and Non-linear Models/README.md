@@ -24,7 +24,8 @@ How does fish length change with age?
 #### Skills Used: Simple Linear Regression, Data Transformation, Non-linear Regression (Von Bertalanffy Growth Function), Prediction
 
 ## 4. Fish Density Variation with Water Depth
-### Description: This exercise investigates the relationship between fish density and water depth. Data transformations are applied, and different non-linear models are tested. The Simple Logistic Model is selected as the best fit, indicating that fish density significantly changes with water depth. A prediction is made to estimate fish density at a specific water depth of 800m.
+### Description: 
+This exercise investigates the relationship between fish density and water depth. Data transformations are applied, and different non-linear models are tested. The Simple Logistic Model is selected as the best fit, indicating that fish density significantly changes with water depth. A prediction is made to estimate fish density at a specific water depth of 800m.
 #### Research Question: 
 How does fish density (fish/Km2) change with water depth (m)?
 #### Skills Used: Simple Linear Regression, Data Transformation, Non-linear Regression (Simple Logistic Model), Prediction
