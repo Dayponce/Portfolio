@@ -38,6 +38,7 @@ boxplot(SL.mm.~Population) #larger in Baffinlsl vs Greenland
 #Scatterplot 
 plot(SL.mm.,Specimen)
 plot(Specimen,SL.mm.)
+detach(Fish.1)
 
 # The dataset contains measurements of Standard Length (SL) in millimeters for 
 # fish specimens. The measures of central tendency reveal that the mean SL is approximately 123.37 mm, the mode is 119 mm, and the median is 123 mm. The data exhibit a slight positive (right) skewness and are leptokurtic, indicating an accentuated peak.
