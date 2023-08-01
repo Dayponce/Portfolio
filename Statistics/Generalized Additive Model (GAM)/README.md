@@ -13,7 +13,7 @@ Does the effect of depth on phytoplankton fluorescence vary between sample locat
 ### Data set:
 ITIS2.csv
 
-## Skills Used:
+#### Skills Used:
 Generalized Additive Model (GAM), AIC comparison, ANOVA, smooth term significance assessment, data visualization, statistical inference.
 
 
