@@ -8,6 +8,7 @@ The database contains two tables. We've limited each table to 400 rows for this 
 SQL querying, database manipulation, data joining, aggregating using functions like AVG and SUM, and result filtering were utilized to analyze video game sales and reviews data, extracting insights about top-selling games, critic and user preferences, and their corresponding release years.
 
 ## Report:
+You can find the notebook file for this analysis [here](https://github.com/Dayponce/Projects/blob/main/SQL/Project%202%3A%20Golden%20Age%20of%20Video%20Games/notebook.ipynb)
 1. The top ten best-selling video games range from "Wii Sports" for the Wii released in 2006 with 82.90 million copies sold down to "New Super Mario Bros. Wii" for the Wii released in 2009 with 30.30 million copies sold.
 2. About 31 games in the dataset lack reviews data, which could limit our analysis.
 3. Based on critic scores, highly rated years for video games include 1990 (avg_critic_score: 9.80), 1992 (avg_critic_score: 9.67), and 1998 (avg_critic_score: 9.32).
