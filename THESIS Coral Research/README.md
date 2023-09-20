@@ -10,6 +10,8 @@ The study investigates the influence of different light spectra (LED Blue-shifte
 
 The data analysis involves using a Cox proportional hazard model for survival analysis and a Generalized Linear Mixed Effect Model (GLMM) to compare coral growth under different light spectra over time, with the aim of identifying the most beneficial light conditions for successful coral restoration efforts.
 
+## Read [FULL THESIS here!](https://nsuworks.nova.edu/hcas_etd_all/144/)
+
 ## Data Analysis: Survival
 The data analysis involves using a Cox proportional hazard model to analyze the survival of coral recruits under different light spectra. For detailed survival curves, please refer to the [Coral Survival Curves RPubs](https://rpubs.com/Dayponce/CoralSurvivalCurves).
 
