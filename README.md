@@ -11,5 +11,5 @@ This repository serves to showcase my skills and as a platform to share my proje
 ## Quick Project Links
 - [R](https://github.com/Dayponce/Projects/tree/main/THESIS%20Coral%20Research )
 - [Tableau](https://public.tableau.com/views/BillboardHot1002013-2023/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [SQL](https://github.com/Dayponce/Projects/tree/main/SQL/Analyzing%20Billboard%20Top%20100%20Songs%20(2013-2023))
+- [SQL](https://github.com/Dayponce/Projects/blob/main/SQL/Analyzing%20Billboard%20Top%20100%20Songs%20(2013-2023)/SQL%20code)
 - [Python](https://github.com/Dayponce/Projects/blob/main/Python/What%20and%20Where%20are%20the%20World's%20Oldest%20Businesses/notebook.ipynb)
