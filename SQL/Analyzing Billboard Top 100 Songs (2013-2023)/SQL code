@@ -1,0 +1,99 @@
+-- Top 10 artists over the last decade
+SELECT
+  SPLIT(Artist, ',')[OFFSET(0)] AS Artist,
+  COUNT(*) AS SongCount
+FROM
+  `top100-411720.top100.charts`
+GROUP BY
+  Artist
+ORDER BY
+  SongCount DESC
+LIMIT 10;
+-- Result: Drake is the artist with the most top 100 placements (excluding features)
+
+-- Top genre overall
+SELECT
+  SPLIT(Parent_Genres, ',')[OFFSET(0)] AS ParentGenre,
+  COUNT(*) AS SongCount
+FROM
+  `top100-411720.top100.charts`
+GROUP BY
+  ParentGenre
+ORDER BY
+  SongCount DESC
+LIMIT 1;
+-- Result: Pop is the highest counted genre. Let's look further by year to understand, as Pop is encompassing of many genres. 
+-- Top 5 most-listened-to genres for each year
+WITH TopGenresPerYear AS (
+  SELECT
+    ChartYear,
+    SPLIT(Parent_Genres, ',')[OFFSET(0)] AS ParentGenre,
+    COUNT(*) AS SongCount,
+    ROW_NUMBER() OVER (PARTITION BY ChartYear ORDER BY COUNT(*) DESC) AS RowNum
+  FROM
+    `top100-411720.top100.charts`
+  GROUP BY
+    ChartYear, ParentGenre
+)
+
+SELECT
+  ChartYear,
+  ParentGenre,
+  SongCount
+FROM
+  TopGenresPerYear
+WHERE
+  RowNum <= 5
+ORDER BY
+  ChartYear, SongCount DESC;
+-- Result: Pop and Hip Hop are the highest.
+
+-- Confirm by looking at the top genre by year, top genre for every decade ordered by year
+WITH MaxGenreCounts AS (
+  SELECT
+    ChartYear,
+    SPLIT(Parent_Genres, ',')[OFFSET(0)] AS ParentGenre,
+    COUNT(*) AS SongCount,
+    ROW_NUMBER() OVER (PARTITION BY ChartYear ORDER BY COUNT(*) DESC) AS RowNum
+  FROM
+    `top100-411720.top100.charts`
+  GROUP BY
+    ChartYear, ParentGenre
+)
+
+SELECT
+  ChartYear,
+  ParentGenre,
+  SongCount
+FROM
+  MaxGenreCounts
+WHERE
+  RowNum = 1
+ORDER BY
+  ChartYear;
+-- The average BPM for each year
+WITH AvgBPMByYear AS (
+  SELECT
+    ChartYear,
+    AVG(BPM) AS AverageBPM
+  FROM
+    `top100-411720.top100.charts`
+  GROUP BY
+    ChartYear
+)
+
+SELECT
+  ChartYear,
+  AverageBPM
+FROM
+  AvgBPMByYear
+ORDER BY
+  ChartYear;
+-- Result: Somewhat stable but increases after 2018.
+
+-- The average song duration
+SELECT
+  AVG(Time_Seconds) AS OverallAverageDurationInSeconds
+FROM
+  `top100-411720.top100.charts`;
+-- Result: Decrease in song duration over the decade.
