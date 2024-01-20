@@ -1,11 +1,16 @@
 # Analyzing Billboard Top 100 Songs (2013-2023) with SQL BigQuery
 
-The music landscape has transformed significantly over the last decade, influenced by evolving tastes and the impact of social media platforms like TikTok and Instagram Reels. This project explores the Billboard Top 100 Songs from 2013 to 2023 using SQL BigQuery.
+About: The music landscape has transformed significantly over the last decade, influenced by evolving tastes and the impact of social media platforms like TikTok and Instagram Reels. This project explores the Billboard Top 100 Songs from 2013 to 2023 using SQL BigQuery.
 
 ## Skills Used
 ### SQL Query Writing
 - Proficient in writing SQL queries to extract, filter, and analyze data from Google BigQuery.
 - Utilized various SQL functions, including SPLIT, COUNT, AVG, and ROW_NUMBER for data manipulation.
+
+## Dashboard
+[![Tableau Visualization](path/to/your/image.png)](https://public.tableau.com/views/BillboardHot1002013-2023/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+Click the image above to view the interactive Tableau dashboard.
 
 ## Key Findings
 ### 1. Top 10 Artists Over the Last Decade
