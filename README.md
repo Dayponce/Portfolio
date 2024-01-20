@@ -8,3 +8,8 @@ Within this portfolio, you will discover projects that exemplify both my data an
 
 This repository serves to showcase my skills and as a platform to share my projects, and a way to track my progress in Data Analytics and Data Science-related topics.
 
+## Quick Project Links
+- [R](https://github.com/Dayponce/Projects/tree/main/THESIS%20Coral%20Research )
+- [Tableau](https://public.tableau.com/views/BillboardHot1002013)
+- [SQL](https://github.com/Dayponce/Projects/tree/main/SQL/Analyzing%20Billboard%20Top%20100%20Songs%20(2013-2023))
+- [Python](https://github.com/Dayponce/Projects/blob/main/Python/What%20and%20Where%20are%20the%20World's%20Oldest%20Businesses/notebook.ipynb)
