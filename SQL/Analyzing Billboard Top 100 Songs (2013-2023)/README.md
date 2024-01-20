@@ -15,6 +15,7 @@
 ## Dashboard
 [![Billboard Hot 100 Dashboard](./Dashboard%201.png)](https://public.tableau.com/views/BillboardHot1002013)
  *Click the image above to view the interactive Tableau dashboard.*
+
 ## Key Findings
 ### 1. Top 10 Artists Over the Last Decade
 - Drake emerges as the dominant artist, showcasing consistent presence and influence.
@@ -29,10 +30,10 @@
 - The average BPM fluctuates, suggesting a diverse range of musical styles.
 - Recent years show an increase in BPM, indicating a potential trend towards more energetic and up-tempo music especially after 2018.
 
-
 ### 4. Song Duration
 - Overall average song duration remains relatively stable, with a noticeable dip in 2019, suggesting a shift towards shorter songs.
-- From an average of 3m:49s in 2013 to an decrease of 3m:17s
+- From an average of 3m:49s in 2013 to an decrease of 3m:17s by 2023.
+
 
 ### Social Media Impact
 - Social media platforms like TikTok and Instagram Reels have redefined music discovery, making short-form videos a dominant medium.
