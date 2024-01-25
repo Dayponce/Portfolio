@@ -12,9 +12,9 @@ The skills used in this script include:
 ## Data Sets
 
 Two datasets are utilized for this analysis:
-- The first dataset, [AppleStore.csv](path_to_file/AppleStore.csv), provides essential metrics such as app name, sizing bytes, ratings, number of supported languages, and devices, offering a comprehensive overview of currently available apps.
+- The first dataset, [AppleStore.csv](SQL/Optimizing%20App%20Success%20Analysis/AppleStore.csv), provides essential metrics such as app name, sizing bytes, ratings, number of supported languages, and devices, offering a comprehensive overview of currently available apps.
 
-- The second dataset, [appleStore_description](path_to_file/appleStore_description), contains app descriptions corresponding to the entries in the `appleStore` dataset. This dataset is crucial for gaining insights into how each app is marketed, its interaction with the user base, and its overall perception in the market.
+- The second dataset, [appleStore_description](SQL/Optimizing%20App%20Success%20Analysis/appleStore_description.csv), contains app descriptions corresponding to the entries in the `appleStore` dataset. This dataset is crucial for gaining insights into how each app is marketed, its interaction with the user base, and its overall perception in the market.
 
 ## Identify Information for the Stakeholder
 
