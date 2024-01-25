@@ -16,7 +16,7 @@ Two datasets are utilized for this analysis:
 
 - The second dataset, [appleStore_description](SQL/Optimizing%20App%20Success%20Analysis/appleStore_description.csv), contains app descriptions corresponding to the entries in the `appleStore` dataset. This dataset is crucial for gaining insights into how each app is marketed, its interaction with the user base, and its overall perception in the market.
 
-## Identify Information for the Stakeholder
+## Identify Information for the Stakeholder using SQL
 
 Identify information for the Stakeholder by analyzing key metrics and trends in the data, enabling informed decision-making for app development or investment strategies, such as:
 
@@ -27,6 +27,7 @@ Identify information for the Stakeholder by analyzing key metrics and trends in 
 - Recommendations for achieving an average rating above 3.5.
 - Insights into the competition and market saturation in games and entertainment categories.
 
+[VIEW SQL Script](SQL/Optimizing%20App%20Success%20Analysis/AppleStoreAnalysis.sql)
 
 ## Key Findings and Final
 
